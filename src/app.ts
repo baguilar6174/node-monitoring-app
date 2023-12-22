@@ -1,9 +1,9 @@
-import { ServerApp } from "./presentation/server";
+import { ServerApp } from '@presentation/server';
 
-(async (): Promise<void> => {
-  await main();
-})()
+void (async () => {
+	await main();
+})();
 
 async function main(): Promise<void> {
-  ServerApp.start();
+	ServerApp.start();
 }
