@@ -16,7 +16,6 @@ yarn
 
 Run `yarn dev`
 
-
 ## My process
 
 ### Built with
@@ -27,9 +26,15 @@ Run `yarn dev`
 ### What I learned
 
 - Clean Architecture
+  - Entities
+  - Data sources
+  - Repositories
+  - Abstract classes
+  - Implementations
 - Dependency injection
 - Use Cases
 - CRON Task
+- Environment variables
 
 ## Development Features
 
@@ -38,7 +43,7 @@ Run `yarn dev`
 
 ## Improves
 
-- 
+-
 
 ## Stay in touch
 
