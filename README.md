@@ -1,5 +1,7 @@
 # Node NOC (Monitoring Application)
 
+This repository contains a monitoring application to create logs on different data sources. The application was implemented using clean architecture concepts and SOLID principles.
+
 ## Installation
 
 Clone this repository
