@@ -1,6 +1,6 @@
 # Node NOC (Monitoring Application)
 
-This repository contains a monitoring application to create logs on different data sources. The application was implemented using clean architecture concepts and SOLID principles.
+This repository contains a monitoring application to create logs on different data sources. Also send emails using NodeMailer service. The application was implemented using clean architecture concepts and SOLID principles.
 
 ## Installation
 
@@ -35,6 +35,8 @@ Run `yarn dev`
 
 - Node
 - Typescript
+- Eslint & Prettier
+- NodeMailer
 
 ### What I learned
 
@@ -46,8 +48,10 @@ Run `yarn dev`
   - Implementations
 - Dependency injection
 - Use Cases
+- Services
 - CRON Task
 - Environment variables
+- NodeMailer
 
 ## Development Features
 
