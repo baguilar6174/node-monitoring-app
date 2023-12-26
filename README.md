@@ -16,6 +16,17 @@ Install dependencies
 yarn
 ```
 
+Clone `.env.template` file and rename to `.env`
+
+```
+PORT=3000
+MAILER_EMAIL=
+MAILER_SECRET_KEY=
+PROD=false
+```
+
+Replace your environment variables in `.env` file
+
 Run `yarn dev`
 
 ## My process

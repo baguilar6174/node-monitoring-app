@@ -1,5 +1,9 @@
 import { CheckService } from '@domain/use-cases/checks/check.service';
 import { CronService } from './cron/cron.serice';
+import { LogRepositoryImpl } from '../infraestructure/repository/log.repository.impl';
+import { FileSystemDatasource } from '../infraestructure/datasources/file-system.datasource';
+
+const fileSystemRepository = new LogRepositoryImpl(new FileSystemDatasource());
 
 // eslint-disable-next-line @typescript-eslint/no-extraneous-class
 export class ServerApp {
@@ -8,6 +12,7 @@ export class ServerApp {
 		CronService.createJob('*/5 * * * * *', () => {
 			const url = 'https://www.google.com';
 			void new CheckService(
+				fileSystemRepository,
 				() => {
 					console.log(`${url} is ok`);
 				},

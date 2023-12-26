@@ -44,6 +44,8 @@
 	},
 	"dependencies": {
 		"cron": "^3.1.6",
-		"cross-fetch": "^4.0.0"
+		"cross-fetch": "^4.0.0",
+		"dotenv": "^16.3.1",
+		"env-var": "^7.4.1"
 	}
 }
