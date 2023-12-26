@@ -1,5 +1,5 @@
 import { CheckService } from '@domain/use-cases/checks/check.service';
-import { CronService } from './cron/cron.serice';
+import { CronService } from './cron/cron.service';
 import { LogRepositoryImpl } from '../infraestructure/repository/log.repository.impl';
 import { FileSystemDatasource } from '../infraestructure/datasources/file-system.datasource';
 
