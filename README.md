@@ -23,11 +23,28 @@ PORT=3000
 MAILER_EMAIL=
 MAILER_SECRET_KEY=
 PROD=false
+MONGO_URL=
+MONGO_DB_NAME=db_noc
+MONGO_USER=baguilar
+MONGO_PASSWORD=baguilar
 ```
 
 Replace your environment variables in `.env` file
 
-Run `yarn dev`
+## Running the app
+
+If you need local mongo database
+
+- Install docker
+- Run `docker-compose up -d` This command create a local volumen in root project to save data.
+
+**Important**: If you don't need mongo from Docker, set your configuration into `.env` file `docker-compose.yaml` create a container:
+
+1. **Mongo Database**: the volume of this database is allocated in the root of your project `./mongo` if you delete this folder you'll lose your data.
+
+- Run `yarn dev`
+
+If your want to create build production, run `yarn build`
 
 ## My process
 
