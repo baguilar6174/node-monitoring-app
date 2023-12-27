@@ -37,6 +37,9 @@ Run `yarn dev`
 - Typescript
 - Eslint & Prettier
 - NodeMailer
+- Mongoose
+- Prisma
+- TypeORM
 
 ### What I learned
 

@@ -4,8 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"dev": "ts-node-dev -r tsconfig-paths/register ./src/app.ts",
-		"dev:watch": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only ./src/app.ts",
+		"dev": "ts-node-dev -r tsconfig-paths/register --clear ./src/app.ts",
+		"dev:watch": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --clear ./src/app.ts",
 		"build": "rimraf ./dist && tsc",
 		"start": "yarn build && node dist/app.js",
 		"format": "prettier --write src/**/*.{ts,scss,md,json} --config ./.prettierrc"
