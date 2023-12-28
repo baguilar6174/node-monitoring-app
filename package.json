@@ -3,6 +3,11 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
+	"engines": {
+		"node": ">=18.18.2",
+		"yarn": ">=1.22.0",
+		"npm": "please-use-yarn"
+	},
 	"scripts": {
 		"dev": "ts-node-dev -r tsconfig-paths/register --clear ./src/app.ts",
 		"dev:watch": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --clear ./src/app.ts",
@@ -48,6 +53,7 @@
 		"cross-fetch": "^4.0.0",
 		"dotenv": "^16.3.1",
 		"env-var": "^7.4.1",
+		"mongoose": "^8.0.3",
 		"nodemailer": "^6.9.7"
 	}
 }

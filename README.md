@@ -36,7 +36,7 @@ Replace your environment variables in `.env` file
 If you need local mongo database
 
 - Install docker
-- Run `docker-compose up -d` This command create a local volumen in root project to save data.
+- Run `docker compose up -d` This command create a local volumen in root project to save data.
 
 **Important**: If you don't need mongo from Docker, set your configuration into `.env` file `docker-compose.yaml` create a container:
 
