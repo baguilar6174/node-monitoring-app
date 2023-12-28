@@ -16,21 +16,7 @@ Install dependencies
 yarn
 ```
 
-Clone `.env.template` file and rename to `.env`
-
-```
-PORT=3000
-MAILER_EMAIL=
-MAILER_SECRET_KEY=
-PROD=false
-MONGO_URL=
-MONGO_DB_NAME=
-MONGO_USER=
-MONGO_PASSWORD=
-POSTGRES_USER=
-POSTGRES_DB=
-POSTGRES_PASSWORD=
-```
+Clone `.env.template` file and rename to `.env`.
 
 Replace your environment variables in `.env` file
 
