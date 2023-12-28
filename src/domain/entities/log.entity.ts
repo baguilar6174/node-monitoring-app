@@ -26,7 +26,20 @@ export class LogEntity {
 	}
 
 	static fromJSON(json: string): LogEntity {
+		json = json === '' ? '{}' : json;
 		const { message, level, createdAt, origin } = JSON.parse(json);
+		const log = new LogEntity({
+			message: message as string,
+			level: level as LogSeverityLevel,
+			origin: origin as string,
+			createdAt
+		});
+		return log;
+	}
+
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	static fromObject(object: Record<string, any>): LogEntity {
+		const { message, level, origin, createdAt } = object;
 		const log = new LogEntity({
 			message: message as string,
 			level: level as LogSeverityLevel,

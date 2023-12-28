@@ -10,5 +10,8 @@ export const envs = {
 	MONGO_URL: env.get('MONGO_URL').required().asString(),
 	MONGO_DB_NAME: env.get('MONGO_DB_NAME').required().asString(),
 	MONGO_USER: env.get('MONGO_USER').required().asString(),
-	MONGO_PASSWORD: env.get('MONGO_PASSWORD').required().asString()
+	MONGO_PASSWORD: env.get('MONGO_PASSWORD').required().asString(),
+	POSTGRES_USER: env.get('POSTGRES_USER').required().asString(),
+	POSTGRES_DB: env.get('POSTGRES_DB').required().asString(),
+	POSTGRES_PASSWORD: env.get('POSTGRES_PASSWORD').required().asString()
 };
