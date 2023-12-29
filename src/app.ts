@@ -1,6 +1,6 @@
 import { ServerApp } from '@presentation/server';
 import { MongoDatabase } from '@data/mongodb';
-import { envs } from './config/plugins/env.plugin';
+import { envs } from '@config/plugins/env.plugin';
 
 void (async (): Promise<void> => {
 	await main();
