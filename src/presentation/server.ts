@@ -2,11 +2,13 @@ import { CheckService } from '@domain/use-cases/checks/check.service';
 import { CronService } from './cron/cron.service';
 import { LogRepositoryImpl } from '../infraestructure/repository/log.repository.impl';
 // import { FileSystemDatasource } from '../infraestructure/datasources/file-system.datasource';
-import { MongoDatasource } from '../infraestructure/datasources/mongo.datasource';
+// import { MongoDatasource } from '../infraestructure/datasources/mongo.datasource';
+import { PostgresDatasource } from '../infraestructure/datasources/postgres.datasource';
 
 const logRepository = new LogRepositoryImpl(
 	// new FileSystemDatasource()
-	new MongoDatasource()
+	// new MongoDatasource(),
+	new PostgresDatasource()
 );
 
 // eslint-disable-next-line @typescript-eslint/no-extraneous-class
