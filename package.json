@@ -1,7 +1,7 @@
 {
 	"name": "node-monitoring-app",
 	"version": "1.0.0",
-	"description": "",
+	"description": "This repository contains a monitoring application to create logs on different data sources. Also send emails using NodeMailer service. The application was implemented using clean architecture concepts and SOLID principles.",
 	"main": "index.js",
 	"engines": {
 		"node": ">=20.10.0",
@@ -14,7 +14,9 @@
 		"build": "rimraf ./dist && tsc",
 		"start": "yarn build && node dist/app.js",
 		"format": "prettier --write src/**/*.{ts,scss,md,json} --config ./.prettierrc",
-		"test": "jest"
+		"test": "jest",
+		"test:watch": "jest --watch",
+		"test:coverage": "jest --coverage"
 	},
 	"repository": {
 		"type": "git",
@@ -22,7 +24,15 @@
 	},
 	"keywords": [
 		"node",
-		"clean architecture"
+		"clean architecture",
+		"typescript",
+		"cron",
+		"mongo",
+		"mongoose",
+		"monitoring",
+		"postgresql",
+		"prisma",
+		"nodemailer"
 	],
 	"author": "Bryan Aguilar",
 	"bugs": {

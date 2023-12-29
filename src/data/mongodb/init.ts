@@ -7,15 +7,14 @@ interface ConnectionOptions {
 
 // eslint-disable-next-line @typescript-eslint/no-extraneous-class
 export class MongoDatabase {
-	static async connect(options: ConnectionOptions): Promise<void> {
+	static async connect(options: ConnectionOptions): Promise<boolean> {
 		const { mongoUrl, dbName } = options;
 		try {
 			await moongose.connect(mongoUrl, {
 				dbName
 			});
-			console.log('Mongo connected');
+			return true;
 		} catch (error) {
-			console.log('Mongo connection error');
 			throw error;
 		}
 	}
