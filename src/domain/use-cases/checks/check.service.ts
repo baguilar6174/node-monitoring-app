@@ -1,4 +1,3 @@
-import fetch from 'cross-fetch';
 import { type LogRepository } from '../../repository/log.repository';
 import { LogEntity, LogSeverityLevel } from '../../entities/log.entity';
 

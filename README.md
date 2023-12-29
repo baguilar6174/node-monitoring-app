@@ -34,8 +34,6 @@ If you need local mongo database
 
 - Run `npx prisma migrate dev --name init` to create a migrations and schema in your Postgres database
 
-`Important` if you don't want to create migrations:
-
 - Run `npx prisma db push` to create tables and relationships
 
 - Run `yarn dev`
