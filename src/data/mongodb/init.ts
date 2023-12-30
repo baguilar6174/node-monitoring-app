@@ -9,6 +9,7 @@ interface ConnectionOptions {
 export class MongoDatabase {
 	static async connect(options: ConnectionOptions): Promise<boolean> {
 		const { mongoUrl, dbName } = options;
+		// eslint-disable-next-line no-useless-catch
 		try {
 			await moongose.connect(mongoUrl, {
 				dbName
