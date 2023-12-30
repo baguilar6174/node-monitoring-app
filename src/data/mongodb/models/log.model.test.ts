@@ -31,6 +31,8 @@ describe('log.model.ts', () => {
 				id: expect.any(String)
 			})
 		);
+
+		await LogModel.findByIdAndDelete(log.id);
 	});
 
 	test('should return the schema object', async () => {
