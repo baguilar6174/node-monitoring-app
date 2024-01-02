@@ -32,7 +32,7 @@ export class LogEntity {
 			message: message as string,
 			level: level as LogSeverityLevel,
 			origin: origin as string,
-			createdAt
+			createdAt: new Date(createdAt as string)
 		});
 		return log;
 	}
